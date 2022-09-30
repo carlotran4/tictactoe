@@ -9,12 +9,12 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/board"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/board"
-        />
+        app:srcCompat="@drawable/board" />
 
     <ImageButton
         android:id="@+id/button_1_2"

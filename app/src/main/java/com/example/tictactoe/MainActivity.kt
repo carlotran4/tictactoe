@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val oImage = R.drawable.o
         var firstPlayer = true
 
+        //TODO: EMPTY BOARD BUTTON AND FUNCTION
+
         fun isEmpty(b:ImageButton):Boolean {
             if (b.contentDescription == "unclicked") return true
             return false
