@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
+
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,14 +24,50 @@ class MainActivity : AppCompatActivity() {
         val oImage = R.drawable.o
         var firstPlayer = true
 
-        fun setLetter(b: ImageButton){
-            if(firstPlayer) b.setImageResource(xImage)
-            else b.setImageResource(oImage)
-            firstPlayer = !firstPlayer
+        fun isEmpty(b:ImageButton):Boolean {
+            if (b.contentDescription == "unclicked") return true
+            return false
         }
-        b11.setOnClickListener(){
+
+
+        fun setLetter(b: ImageButton){
+            if(isEmpty(b)) {
+                if (firstPlayer) b.setImageResource(xImage)
+                else b.setImageResource(oImage)
+                firstPlayer = !firstPlayer
+                b.contentDescription = "clicked"
+            }
+        }
+
+        b11.setOnClickListener {
             setLetter(b11)
         }
+        b12.setOnClickListener {
+            setLetter(b12)
+        }
+        b13.setOnClickListener {
+            setLetter(b13)
+        }
+        b21.setOnClickListener {
+            setLetter(b21)
+        }
+        b22.setOnClickListener{
+            setLetter(b22)
+        }
+        b23.setOnClickListener{
+            setLetter(b23)
+        }
+        b31.setOnClickListener{
+            setLetter(b31)
+        }
+        b32.setOnClickListener{
+            setLetter(b32)
+        }
+        b33.setOnClickListener{
+            setLetter(b33)
+        }
+
+
 
     }
 
