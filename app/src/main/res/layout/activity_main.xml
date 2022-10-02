@@ -143,7 +143,35 @@
         app:srcCompat="@drawable/default_button_image"
         style="?android:attr/borderlessButtonStyle"
         android:contentDescription="@string/unclicked"
+        />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:text="X WINS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/winner_text"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/winner_text"
+        app:layout_constraintTop_toBottomOf="@id/winner_text"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:text="@string/clear_board_to_play_again"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:id="@+id/play_again_text"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

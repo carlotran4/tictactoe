@@ -4,4 +4,5 @@
     <string name="unclicked">unclicked</string>
     <string name="board">board</string>
     <string name="clear_board">CLEAR BOARD</string>
+    <string name="clear_board_to_play_again">Clear Board to Play Again</string>
 </resources>
